@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Header.js";
+import Header from './components/Header'
 import CharacterList from './components/CharacterList'
 import CharacterCard from "./components/CharacterCard.js";
 
