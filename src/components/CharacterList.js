@@ -17,16 +17,20 @@ export default function CharacterList() {
         let newData = response.data.results
         console.log(newData)
         setCharacter(newData)
-
+      })
+      .catch(error => {
+        console.log(`check with Morty`, error)
+      
       })
   }, []);
 
   return (
     <section className="character-list">
       <h2>{character.map(item => {
-        return <CharacterCard item={item}/>
+        return <CharacterCard key={item.id} item={item} />
         
-      })}</h2>
+      })}
+      </h2>
     </section>
   );
 }

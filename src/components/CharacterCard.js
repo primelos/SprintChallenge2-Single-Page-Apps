@@ -7,13 +7,17 @@ console.log(`CHAR`, props)
 
 
   return (
+
     <div >
-      <h3>Name: {props.name}</h3>
-      <img src={props.image} />
-      <p>Species{props.species}</p>
-      <p>Gender: {props.gender}</p>
-      <p>Status: {props.status}</p>
-      {/* <p>{props.origin.name}</p> */}
+
+      <h3>Name: {props.item.name}</h3>
+      <img src={props.item.image} />
+      <p>Species: {props.item.species}</p>
+      <p>Gender: {props.item.gender}</p>
+      <p>Status: {props.item.status}</p>
+      <p>Origin: {props.item.origin.name}</p>
+
     </div>
+
   );
 }
