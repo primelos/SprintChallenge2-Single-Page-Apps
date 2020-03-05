@@ -9,7 +9,7 @@ background-image: url('https://rickandmorty-prod.s3.amazonaws.com/uploads/156209
 export default function WelcomePage() {
   return (
     <section className="welcome-page">
-      <header>
+      <header className='welcome-header'>
 
         <h1>Welcome to the ultimate fan site!</h1>
         <Img2>     

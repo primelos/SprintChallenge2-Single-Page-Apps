@@ -43,7 +43,7 @@ export default function CharacterList() {
   return (
     <section className="character-list">
       <SearchForm change={watchChange} val={query} set={setQuery}  />
-      <h1>These are your Amazing Characters</h1>
+      <h1 className='search-header'>These are your Amazing Characters</h1>
 
       <MainBox>{character.map(item => {
         return <CharacterCard key={item.id} item={item} />

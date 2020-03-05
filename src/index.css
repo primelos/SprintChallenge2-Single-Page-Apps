@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  
 }
 
 main {
@@ -36,4 +37,20 @@ main {
 
 header h1 {
   text-align: center;
+}
+button{
+  
+  /* height: 30px; */
+}
+.search-header {
+  color: #2f0003;
+}
+.main-img {
+  border-radius: 50%;
+}
+.welcome-header {
+  text-align: center;
+}
+.navs {
+  padding-right: 9px;
 }
