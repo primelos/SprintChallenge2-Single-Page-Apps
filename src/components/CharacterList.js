@@ -14,7 +14,8 @@ export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [character, setCharacter] = useState([])
   const [query, setQuery] = useState('')
-  
+  const [x, setX] = useState('')
+
   let url1 = `https://rickandmortyapi.com/api/character/`
 
   useEffect(() => {
@@ -34,15 +35,22 @@ export default function CharacterList() {
         console.log(`check with Morty`, error)
       
       })
-  }, [query]);
+  }, [x]);
 
-  const watchChange = e => {
+  const upDate = e => {
     setQuery(e.target.value)
   }
+  
+  const watchChange = e => {
+    e.preventDefault()
+    setX(query)
+    
+  }
+
 
   return (
     <section className="character-list">
-      <SearchForm change={watchChange} val={query} set={setQuery}  />
+      <SearchForm watchChange={watchChange} query={query} upDate={upDate} />
       <h1 className='search-header'>These are your Amazing Characters</h1>
 
       <MainBox>{character.map(item => {
