@@ -11,7 +11,9 @@ main {
   margin: 35px auto;
   background: #fff;
   padding: 15px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); */
+  /* background: yellow; */
+
 }
 
 .grid-view {
@@ -36,4 +38,75 @@ main {
 
 header h1 {
   text-align: center;
+}
+
+.search-header {
+  color: #2f0003;
+  text-align: center;
+  font-family: 'Indie Flower',cursive;
+}
+.main-img {
+  border-radius: 50%;
+  width: 50px;
+  padding-right: 10px;
+}
+.welcome-header {
+  text-align: center;
+}
+.navs {
+  padding-right: 9px;
+  color: #2f0003;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navs:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: navy;
+    transform: scale(1.2);
+  }
+.navs:focus {
+  outline: none;
+}
+.img-nav {
+  display: flex;
+  align-items: center;
+  
+}
+
+.welcome-text {
+  text-align: center;
+  animation: color-change 1s infinite;
+}
+  
+  @keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
+button{
+  border: none;
+  padding: 10px;
+}
+button:active{
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.info-result{
+  font-size: 1rem;
+  font-family: 'Indie Flower',cursive;
+}
+.downUp {
+  margin-left: 10px;
+}
+.cards h3 {
+  font-family: 'Indie Flower',cursive;
+  text-align: center;
+}
+a {
+  font-family: 'Indie Flower',cursive;
 }
